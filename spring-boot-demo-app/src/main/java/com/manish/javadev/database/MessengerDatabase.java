@@ -4,9 +4,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import com.manish.javadev.model.MessageEntity;
 import com.manish.javadev.model.UserEntity;
 
+@Service
 public class MessengerDatabase {
 	private static Map<Integer, MessageEntity> messengerMap = new HashMap<Integer, MessageEntity>();
 	private static Map<Integer, UserEntity> userMap = new HashMap<Integer, UserEntity>();

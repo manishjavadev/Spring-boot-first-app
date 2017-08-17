@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import com.manish.javadev.database.MessengerDatabase;
 import com.manish.javadev.model.UserEntity;
 
@@ -12,6 +14,7 @@ import com.manish.javadev.model.UserEntity;
  * @author Manish
  *
  */
+@Service
 public class MessengerService {
 
 	public static UserEntity userInfo(Integer id) {
